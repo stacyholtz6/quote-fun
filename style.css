@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #de6161; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2657eb,
+    #de6161
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2657eb,
+    #de6161
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  /* top and bottom of 20px, left & right of 30px */
+  padding: 20px 30px;
+  border-radius: 10px;
+  /* rgba, a - allows you to control the opacity of the color */
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  /* reletive size compared to the root element - default value of 16px - helps maintain consistent and responsive design - 1rem = 16px 2.75rem = 45px */
+  font-size: 2.75rem;
+}
+
+.long-quote {
+  /* 2rem = 32px */
+  /* will turn this on and off with JS - Only use when needed */
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  /* 4rem = 64px */
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  /* font-weight 400 is normal - 700 is bold */
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  /* .5rem on top & bottom, 1.8rem left & right */
+  padding: 0.5rem 1.8rem;
+  /* horizontal and vertical values only */
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  /* on the verticle access - moving the button down 0.3rem - makes it look like it's being pressed */
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+/* loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #333; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query - always at bottom so it overwrites all the code */
+/* standard tablet or smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    /* auto on top & bottom, 10px on Left & Right so box has a defined border on smaller screens */
+    margin: auto, 10px;
+  }
+
+  /* smaller text on mobile */
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
