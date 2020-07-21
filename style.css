@@ -41,7 +41,7 @@ body {
 
 .quote-text {
   /* reletive size compared to the root element - default value of 16px - helps maintain consistent and responsive design - 1rem = 16px 2rem = 32px */
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .long-quote {
@@ -123,14 +123,12 @@ button:active {
 
 /* Media Query - always at bottom so it overwrites all the code */
 /* standard tablet or smaller */
-@media screen and (max-width: 600px) {
+/* auto on top & bottom, 10px on Left & Right so box has a defined border on smaller screens */
+/* @media screen and (max-width: 600px) {
   .quote-container {
-    /* auto on top & bottom, 10px on Left & Right so box has a defined border on smaller screens */
     margin: auto, 20px;
   }
-
-  /* smaller text on mobile */
   .quote-text {
     font-size: 2.5rem;
   }
-}
+} */
