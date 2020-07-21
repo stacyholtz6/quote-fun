@@ -45,9 +45,9 @@ body {
 }
 
 .long-quote {
-  /* 2rem = 32px */
+  /* 1rem = 16px */
   /* will turn this on and off with JS - Only use when needed */
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .fa-quote-left {
@@ -131,7 +131,6 @@ button:active {
   .quote-text {
     font-size: 1rem;
   }
-
   .fa-quote-left {
     font-size: 2rem;
   }
