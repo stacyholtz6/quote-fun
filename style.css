@@ -47,7 +47,7 @@ body {
 .long-quote {
   /* 1rem = 16px */
   /* will turn this on and off with JS - Only use when needed */
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .fa-quote-left {
@@ -126,10 +126,13 @@ button:active {
 /* auto on top & bottom, 10px on Left & Right so box has a defined border on smaller screens */
 @media screen and (max-width: 600px) {
   .quote-container {
-    margin: auto, 20px;
+    margin: 20px;
   }
   .quote-text {
     font-size: 1rem;
+  }
+  .long-quote {
+    font-size: 0.5rem;
   }
   .fa-quote-left {
     font-size: 2rem;
